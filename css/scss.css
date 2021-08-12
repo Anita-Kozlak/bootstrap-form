@@ -1,0 +1,40 @@
+body {
+  background-color: aquamarine;
+  position: relative;
+  margin: 50px; }
+
+.bg-primary {
+  background-color: #90ee90 !important; }
+
+.fa {
+  font-family: "FontAwesome";
+  font-size: xx-large; }
+
+section {
+  position: relative; }
+  section .menu {
+    height: 677px;
+    width: 120px;
+    position: absolute;
+    top: 19px;
+    left: 84px; }
+  section .section-form {
+    background-color: white;
+    padding-left: 189px; }
+    section .section-form h1 {
+      color: green; }
+    section .section-form h2 {
+      color: #90ee90; }
+    section .section-form input {
+      border-top: none;
+      border-left: none;
+      border-right: none; }
+  section .get10 {
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    bottom: 169px;
+    right: 28px;
+    transform: rotate(-90deg);
+    font-size: 20px;
+    padding-top: 13px !important; }
