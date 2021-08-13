@@ -1,6 +1,5 @@
 body {
   background-color: aquamarine;
-  position: relative;
   margin: 50px; }
 
 .bg-primary {
@@ -10,31 +9,66 @@ body {
   font-family: "FontAwesome";
   font-size: xx-large; }
 
-section {
+.modal-header {
+  border-bottom: none; }
+
+.modal-footer {
+  border-top: none; }
+
+section .menu {
+  height: 677px;
+  width: 120px;
+  position: absolute;
+  top: -37px;
+  left: 17px; }
+
+section .section-form {
+  background-color: white;
+  padding-left: 164px;
   position: relative; }
-  section .menu {
-    height: 677px;
-    width: 120px;
-    position: absolute;
-    top: 19px;
-    left: 84px; }
-  section .section-form {
-    background-color: white;
-    padding-left: 189px; }
-    section .section-form h1 {
-      color: green; }
-    section .section-form h2 {
-      color: #90ee90; }
-    section .section-form input {
-      border-top: none;
-      border-left: none;
-      border-right: none; }
-  section .get10 {
-    height: 60px;
-    width: 100px;
-    position: absolute;
-    bottom: 169px;
-    right: 28px;
-    transform: rotate(-90deg);
-    font-size: 20px;
-    padding-top: 13px !important; }
+  section .section-form h1 {
+    color: green; }
+  section .section-form h2 {
+    color: #90ee90; }
+  section .section-form input {
+    border-top: none;
+    border-left: none;
+    border-right: none; }
+  section .section-form .input-form {
+    position: relative;
+    width: 85%; }
+    section .section-form .input-form .update {
+      width: 70px;
+      height: 30px;
+      background-color: lightgrey;
+      color: green;
+      position: absolute;
+      top: 25px;
+      right: -1px;
+      cursor: pointer; }
+
+section .get10 {
+  height: 60px;
+  width: 100px;
+  position: absolute;
+  bottom: 105px;
+  right: -20px;
+  transform: rotate(-90deg);
+  font-size: 20px;
+  padding-top: 13px !important; }
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 40px 0; }
+  section {
+    padding: 20px !important; }
+    section .menu {
+      width: 66px; }
+    section .section-form {
+      padding-left: 100px; }
+    section .get10 {
+      right: -30px;
+      height: 40px; } }
+
+.form-control:focus {
+  box-shadow: none; }

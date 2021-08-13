@@ -1,6 +1,5 @@
 body {
     background-color: aquamarine;
-    position: relative;
     margin: 50px;
 }
 .bg-primary {
@@ -10,18 +9,24 @@ body {
     font-family: "FontAwesome";
     font-size: xx-large;
 }
+.modal-header {
+    border-bottom: none;
+}
+.modal-footer {
+    border-top: none;
+}
 section {
-    position: relative;
     .menu {
         height: 677px;
         width: 120px;
         position: absolute;
-        top: 19px;
-        left: 84px;
+        top: -37px;
+        left: 17px;
     }
     .section-form {
         background-color: white;
-        padding-left: 189px;
+        padding-left: 164px;
+        position: relative;
         h1 {
             color: green;
         }
@@ -33,16 +38,53 @@ section {
             border-left: none;
             border-right: none;
         }
+        .input-form {
+            position: relative;
+            width: 85%;
+            .update {
+                width: 70px;
+                height: 30px;
+                background-color: lightgrey;
+                color: green;
+                position: absolute;
+                top: 25px;
+                right: -1px;
+                cursor: pointer;
+            }
+        }
     }
 
     .get10 {
         height: 60px;
         width: 100px;
         position: absolute;
-        bottom: 169px;
-        right: 28px;
+        bottom: 105px;
+        right: -20px;
         transform: rotate(-90deg);
         font-size: 20px;
         padding-top: 13px !important;
     }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        margin: 40px 0;
+    }
+    section {
+        padding: 20px !important;
+        .menu {
+            width: 66px;
+        }
+        .section-form {
+            padding-left: 100px;
+        }
+        .get10 {
+            right: -30px;
+            height: 40px;
+        }
+    }
+}
+
+.form-control:focus {
+    box-shadow: none;
 }
